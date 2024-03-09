@@ -1,0 +1,120 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url("https://i.postimg.cc/HLkzLyLh/page2-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+    transition: opacity 1.062s;
+}
+
+.F{
+    text-align: left;
+    padding-left: 30px;
+}
+
+.L{
+    padding: 20px;
+    text-align: right;
+    padding-right: 30px;
+}
+.mm{
+    background-color: #1ce741;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    border: none;
+    transition: 0.2s ease;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.mm:hover{
+    opacity: 0.8;
+  }
+
+.text-center {
+    text-align: center;
+    background: linear-gradient(#2ca58d, #84bc9c);
+    color: white;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu-item {
+    flex: 0 0 calc(33.333% - 20px);
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.menu-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+.card-title {
+    background: linear-gradient(#2ca58d, #84bc9c);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin-bottom: 0px;
+}
+
+.spacing{
+    padding: 50px;
+    justify-content: center;
+}
+
+.menu-description{
+    background-color: white;
+    background-size: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .card{
+        grid-template-columns:  1fr;
+    }
+}
